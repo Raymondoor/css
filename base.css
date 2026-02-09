@@ -1,10 +1,14 @@
 /* *{all:unset;} */
+@import url('https://fonts.cdnfonts.com/css/ubuntu-mono-2');
+@import url('https://fonts.cdnfonts.com/css/br-sonoma');
 :root{
 	--fnts-base:clamp(0.75rem, 2vw, 1rem);
 	--fnts-half:calc(var(--fnts-base)*0.5);
 	--fnts-double:calc(var(--fnts-base)*2);
+	--borderColor:#999;
 }
-body{
+*{font-family:'BR Sonoma', sans-serif;}
+html, body{
 	margin:0;padding:0;
 	font-size:var(--fnts-base);
 	box-sizing:border-box;
@@ -22,9 +26,11 @@ h3{font-size:calc(var(--fnts-base)*1.17);}
 h2{font-size:calc(var(--fnts-base)*1.5);}
 h1{font-size:calc(var(--fnts-base)*2);}
 button,input,option,select,textarea{font-size:calc(var(--fnts-base)*1);line-height:1.5;}
-hr{margin:0;border:0.5px solid #999;}
+button{cursor:pointer;}
+summary{font-size:calc(var(--fnts-base)*1);cursor:pointer;}
+hr{margin:0;border:0.5px solid var(--borderColor);}
 code,pre{background-color:#eee;}
 pre{margin:0;padding:var(--fnts-half);line-height:1.25;}
-fieldset{margin:0;padding:var(--fnts-half);border:1px solid #999;}
+fieldset{margin:0;padding:var(--fnts-half);border:1px solid var(--borderColor);}
 table{border-collapse:collapse;}
-table,th,td{border:1px solid #999;padding:var(--fnts-half);}
+table,th,td{border:1px solid var(--borderColor);padding:var(--fnts-half);}
