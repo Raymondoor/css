@@ -6,7 +6,7 @@
 	font-family:serif, sans-serif;
 }
 *{
-	position: absolute;
+	position: relative;
 	font-size:clamp(12px, 2vw, 16px);
 	font-family:'BR Sonoma', sans-serif;
 	box-sizing:border-box;
